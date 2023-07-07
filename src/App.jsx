@@ -9,7 +9,7 @@ function App() {
             <div class="mb-6 flex justify-center">
               <img
                 src="https://links.samyakkhatua.in/profile-pic.png"
-                class="w-32 rounded-full shadow-lg dark:shadow-black/30"
+                class="w-48 rounded-full shadow-lg dark:shadow-black/30"
               />
             </div>
 
@@ -17,7 +17,7 @@ function App() {
               Samyak Khatua
             </h5>
 
-            <h6 class="mt-0 mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48">
+            <h6 class="mt-0 mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-0">
               Fullstack Developer
             </h6>
 
