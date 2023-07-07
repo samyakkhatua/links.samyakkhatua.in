@@ -4,7 +4,7 @@ function App() {
   return (
     <div className="">
       <div className="justify-content m-auto w-[50%] ">
-        <h1 className="text-3xl font-bold">Hi, there!</h1>
+        
 
         <div class="gap-6 text-center md:grid-cols-3 lg:gap-12 text-white">
           <div class="mb-12 md:mb-0">
@@ -14,11 +14,14 @@ function App() {
                 class="w-32 rounded-full shadow-lg dark:shadow-black/30"
               />
             </div>
-            <h5 class="mb-4 text-xl font-semibold">Maria Smantha</h5>
-            <h6 class="mb-4 font-semibold text-primary dark:text-primary-500">
-              Web Developer
+
+            <h5 class="mb-2 text-4xl font-extrabold tracking-tight leading-none text-white md:text-4xl lg:text-4xl">Samyak Khatua</h5>
+            
+            <h6 class="mt-0 mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48">
+              Fullstack Developer
             </h6>
-            <p class="mb-4">
+
+            {/* <p class="mb-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="currentColor"
@@ -29,30 +32,27 @@ function App() {
               </svg>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos
               id officiis hic tenetur quae quaerat ad velit ab hic tenetur.
-            </p>
+            </p> */}
           </div>
         </div>
 
-        <div class="relative rounded-full px-3 py-1 text-sm leading-6 text-white ring-1 ring-white-200 hover:ring-white my-4">
-          Threads @samyakkhatua{" "}
-          <a
-            href="https://drive.google.com/file/d/1aJyfeB0eRhFFgRuhHsvBIk_E8ZPf6FXT/view"
-            class="font-semibold text-indigo-600"
-          >
-            <span class="absolute inset-0" aria-hidden="true"></span>
-            <span aria-hidden="true">&rarr;</span>
-          </a>
-        </div>
-        <div class="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20 my-4">
-          Linkedin @samyakkhatua{" "}
-          <a
-            href="https://drive.google.com/file/d/1aJyfeB0eRhFFgRuhHsvBIk_E8ZPf6FXT/view"
-            class="font-semibold text-indigo-600"
-          >
-            <span class="absolute inset-0" aria-hidden="true"></span>
-            <span aria-hidden="true">&rarr;</span>
-          </a>
-        </div>
+        <a href="#" class="inline-flex justify-between items-center py-1 px-1 pr-4 mb-4 text-sm text-gray-700 bg-gray-100 rounded-full w-full hover:bg-gray-200" role="alert">
+            <span class="text-xs bg-blue-600 rounded-full text-white px-4 py-1.5 mr-3 w-30">Threads</span> <span class="text-sm font-medium">Threads is out! See what's happening!</span> 
+            <svg class="ml-2 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+        </a>
+        <a href="#" class="inline-flex justify-between items-center py-1 px-1 pr-4 mb-4 text-sm text-gray-700 bg-gray-100 rounded-full w-full hover:bg-gray-200" role="alert">
+            <span class="text-xs bg-blue-600 rounded-full text-white px-4 py-1.5 mr-3 w-30">Linkedin</span> <span class="text-sm font-medium">Threads is out! See what's happening!</span> 
+            <svg class="ml-2 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+        </a>
+        <a href="#" class="inline-flex justify-between items-center py-1 px-1 pr-4 mb-4 text-sm text-gray-700 bg-gray-100 rounded-full w-full hover:bg-gray-200" role="alert">
+            <span class="text-xs bg-blue-600 rounded-full text-white px-4 py-1.5 mr-3 w-30">Github</span> <span class="text-sm font-medium">Threads is out! See what's happening!</span> 
+            <svg class="ml-2 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+        </a>
+
+
+        
+
+        
       </div>
     </div>
   );
