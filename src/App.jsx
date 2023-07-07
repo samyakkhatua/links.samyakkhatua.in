@@ -2,7 +2,7 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="">
+    <div className="mt-32">
       <div className="justify-content m-auto w-full sm:w-[40%] ">
         <div class="gap-6 text-center md:grid-cols-3 lg:gap-12 text-white">
           <div class="mb-12 md:mb-0">
