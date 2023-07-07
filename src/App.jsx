@@ -2,7 +2,7 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="mt-32">
+    <div className="mt-32 h-[100%]">
       <div className="justify-content m-auto w-full sm:w-[40%] ">
         <div class="gap-6 text-center md:grid-cols-3 lg:gap-12 text-white">
           <div class="mb-12 md:mb-0">
@@ -116,6 +116,7 @@ function App() {
         </a>
       </div>
       
+      <p class="w-full text-center my-12 text-gray-600 sticky pt-32 bottom-0">Made by Samyak Khatua</p>
     </div>
   );
 }
