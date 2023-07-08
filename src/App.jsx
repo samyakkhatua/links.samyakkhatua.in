@@ -8,7 +8,8 @@ function App() {
           <div class="mb-12 md:mb-0">
             <div class="mb-6 flex justify-center">
               <img
-                src="https://links.samyakkhatua.in/profile-pic.webp"
+                // src="https://links.samyakkhatua.in/profile-pic.webp"
+                src="https://res.cloudinary.com/dmkmepkbv/image/upload/v1688840747/profile-pic_ro6k28.webp"
                 class="w-48 rounded-full shadow-lg dark:shadow-black/30"
               />
             </div>
