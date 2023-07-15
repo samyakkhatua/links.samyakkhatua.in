@@ -1,10 +1,15 @@
 import "./App.css";
+import useAnalyticsEventTracker from "./components/useAnalyticsEventTracker";
+
 import ReactGA from 'react-ga';
 const TRACKING_ID = "UA-XXXXX-X";
 ReactGA.initialize(TRACKING_ID);
 
 
 function App() {
+
+  const gaEventTracker = useAnalyticsEventTracker('');
+
   return (
     <div className="mt-32 h-[100%]">
       <div className="justify-content m-auto w-full sm:w-[40%] ">
@@ -47,6 +52,7 @@ function App() {
           class="inline-flex justify-between items-center py-1 px-1 pr-4 mb-4 text-sm text-gray-700 bg-gray-100 rounded-full w-full hover:bg-gray-200 sm:w-full"
           role="alert"
           target="_blank"
+          onClick={()=>gaEventTracker('threads')}
         >
           <span class="text-xs bg-blue-600 rounded-full text-white px-4 py-1.5 mr-3 ">
             Threads
@@ -74,6 +80,7 @@ function App() {
           class="inline-flex justify-between items-center py-1 px-1 pr-4 mb-4 text-sm text-gray-700 bg-gray-100 rounded-full w-full hover:bg-gray-200"
           role="alert"
           target="_blank"
+          onClick={()=>gaEventTracker('linkedin')}
         >
           <span class="text-xs bg-blue-600 rounded-full text-white px-4 py-1.5 mr-3 w-30">
             Linkedin
@@ -99,6 +106,7 @@ function App() {
           class="inline-flex justify-between items-center py-1 px-1 pr-4 mb-4 text-sm text-gray-700 bg-gray-100 rounded-full w-full hover:bg-gray-200"
           role="alert"
           target="_blank"
+          onClick={() => gaEventTracker('github')}
         >
           <span class="text-xs bg-blue-600 rounded-full text-white px-4 py-1.5 mr-3 w-30">
             Github
