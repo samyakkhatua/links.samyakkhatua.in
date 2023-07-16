@@ -51,7 +51,8 @@ function App() {
           class="inline-flex justify-between items-center py-1 px-1 pr-4 mb-4 text-sm text-gray-700 bg-gray-100 rounded-full w-full hover:bg-gray-200 sm:w-full"
           role="alert"
           target="_blank"
-          onClick={()=>gaEventTracker('threads')}
+          // onClick={() => gaEventTracker('threads')}
+          onClick={() => ReactGA.event({ 'category':'link cards', 'action':'card clicked', 'label':'threads' })}
         >
           <span class="text-xs bg-blue-600 rounded-full text-white px-4 py-1.5 mr-3 ">
             Threads
@@ -79,7 +80,7 @@ function App() {
           class="inline-flex justify-between items-center py-1 px-1 pr-4 mb-4 text-sm text-gray-700 bg-gray-100 rounded-full w-full hover:bg-gray-200"
           role="alert"
           target="_blank"
-          onClick={()=>gaEventTracker('linkedin')}
+          // onClick={()=>gaEventTracker('linkedin')}
         >
           <span class="text-xs bg-blue-600 rounded-full text-white px-4 py-1.5 mr-3 w-30">
             Linkedin
@@ -105,7 +106,7 @@ function App() {
           class="inline-flex justify-between items-center py-1 px-1 pr-4 mb-4 text-sm text-gray-700 bg-gray-100 rounded-full w-full hover:bg-gray-200"
           role="alert"
           target="_blank"
-          onClick={() => gaEventTracker('github')}
+          // onClick={() => gaEventTracker('github')}
         >
           <span class="text-xs bg-blue-600 rounded-full text-white px-4 py-1.5 mr-3 w-30">
             Github
@@ -133,7 +134,7 @@ function App() {
           class="inline-flex justify-between items-center py-1 px-1 pr-4 mb-4 text-sm text-gray-700 bg-gray-100 rounded-full w-full hover:bg-gray-200"
           role="alert"
           target="_blank"
-          onClick={() => gaEventTracker('github')}
+          // onClick={() => gaEventTracker('github')}
         >
           <span class="text-xs bg-blue-600 rounded-full text-white px-4 py-1.5 mr-3 w-30">
             Email
