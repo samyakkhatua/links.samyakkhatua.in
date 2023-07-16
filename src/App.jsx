@@ -1,9 +1,9 @@
 import "./App.css";
 import useAnalyticsEventTracker from "./components/useAnalyticsEventTracker";
 
-import ReactGA from 'react-ga';
-const TRACKING_ID = "UA-239312461-1";
-ReactGA.initialize(TRACKING_ID);
+import ReactGA from 'react-ga4';
+const MEASUREMENT_ID = "G-RRSWWQMQ0Y";
+ReactGA.initialize(MEASUREMENT_ID);
 
 
 function App() {
