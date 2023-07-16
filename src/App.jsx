@@ -7,7 +7,7 @@ ReactGA.initialize(MEASUREMENT_ID);
 
 
 function App() {
-  ReactGA.send({ hitType: "pageview", page: "/home", title: "Home" });
+  ReactGA.send({ hitType: "pageview", page: window.location.pathname, title: "Home" });
   // const gaEventTracker = useAnalyticsEventTracker('links');
 
   return (
