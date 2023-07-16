@@ -2,13 +2,12 @@ import "./App.css";
 import useAnalyticsEventTracker from "./components/useAnalyticsEventTracker";
 
 import ReactGA from 'react-ga';
-const TRACKING_ID = "UA-XXXXX-X";
+const TRACKING_ID = "G-2RRXSBMB1E";
 ReactGA.initialize(TRACKING_ID);
 
 
 function App() {
-
-  const gaEventTracker = useAnalyticsEventTracker('');
+  const gaEventTracker = useAnalyticsEventTracker('links');
 
   return (
     <div className="mt-32 h-[100%]">
