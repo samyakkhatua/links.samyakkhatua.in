@@ -1,5 +1,5 @@
 import "./App.css";
-import useAnalyticsEventTracker from "./components/useAnalyticsEventTracker";
+// import useAnalyticsEventTracker from "./components/useAnalyticsEventTracker";
 
 import ReactGA from 'react-ga4';
 const MEASUREMENT_ID = "G-RRSWWQMQ0Y";
