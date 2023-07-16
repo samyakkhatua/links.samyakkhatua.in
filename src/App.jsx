@@ -8,7 +8,7 @@ ReactGA.initialize(MEASUREMENT_ID);
 
 function App() {
   ReactGA.send({ hitType: "pageview", page: "/home", title: "Home" });
-  const gaEventTracker = useAnalyticsEventTracker('links');
+  // const gaEventTracker = useAnalyticsEventTracker('links');
 
   return (
     <div className="mt-32 h-[100%]">
