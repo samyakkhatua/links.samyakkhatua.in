@@ -1,14 +1,23 @@
 import "./App.css";
-// import useAnalyticsEventTracker from "./components/useAnalyticsEventTracker";
+import useAnalyticsEventTracker from "./components/useAnalyticsEventTracker";
 
-import ReactGA from 'react-ga4';
+// Google Analytics (GA4)
+import ReactGA from "react-ga4";
 const MEASUREMENT_ID = "G-RRSWWQMQ0Y";
 ReactGA.initialize(MEASUREMENT_ID);
 
-
 function App() {
-  ReactGA.send({ hitType: "pageview", page: window.location.pathname, title: "Home" });
-  // const gaEventTracker = useAnalyticsEventTracker('links');
+
+  // page views
+  ReactGA.send({
+    hitType: "pageview",
+    page: window.location.pathname,
+    title: "Home",
+  });
+
+  // GA event tracker
+  const gaEventTracker = (category, action, label) =>
+    useAnalyticsEventTracker(category, action, label);
 
   return (
     <div className="mt-32 h-[100%]">
@@ -52,8 +61,9 @@ function App() {
           class="inline-flex justify-between items-center py-1 px-1 pr-4 mb-4 text-sm text-gray-700 bg-gray-100 rounded-full w-full hover:bg-gray-200 sm:w-full"
           role="alert"
           target="_blank"
-          // onClick={() => gaEventTracker('threads')}
-          onClick={() => ReactGA.event({ 'category':'link cards', 'action':'card clicked', 'label':'threads' })}
+          onClick={() =>
+            gaEventTracker("link cards", "card clicked", "threads")
+          }
         >
           <span class="text-xs bg-blue-600 rounded-full text-white px-4 py-1.5 mr-3 ">
             Threads
@@ -81,7 +91,9 @@ function App() {
           class="inline-flex justify-between items-center py-1 px-1 pr-4 mb-4 text-sm text-gray-700 bg-gray-100 rounded-full w-full hover:bg-gray-200"
           role="alert"
           target="_blank"
-          // onClick={()=>gaEventTracker('linkedin')}
+          onClick={() =>
+            gaEventTracker("link cards", "card clicked", "linkedin")
+          }
         >
           <span class="text-xs bg-blue-600 rounded-full text-white px-4 py-1.5 mr-3 w-30">
             Linkedin
@@ -107,7 +119,9 @@ function App() {
           class="inline-flex justify-between items-center py-1 px-1 pr-4 mb-4 text-sm text-gray-700 bg-gray-100 rounded-full w-full hover:bg-gray-200"
           role="alert"
           target="_blank"
-          // onClick={() => gaEventTracker('github')}
+          onClick={() =>
+            gaEventTracker("link cards", "card clicked", "github")
+          }
         >
           <span class="text-xs bg-blue-600 rounded-full text-white px-4 py-1.5 mr-3 w-30">
             Github
@@ -135,14 +149,14 @@ function App() {
           class="inline-flex justify-between items-center py-1 px-1 pr-4 mb-4 text-sm text-gray-700 bg-gray-100 rounded-full w-full hover:bg-gray-200"
           role="alert"
           target="_blank"
-          // onClick={() => gaEventTracker('github')}
+          onClick={() =>
+            gaEventTracker("link cards", "card clicked", "email")
+          }
         >
           <span class="text-xs bg-blue-600 rounded-full text-white px-4 py-1.5 mr-3 w-30">
             Email
           </span>{" "}
-          <span class="text-sm font-medium">
-          hello@samyakkhatua.in
-          </span>
+          <span class="text-sm font-medium">hello@samyakkhatua.in</span>
           <svg
             class="ml-2 w-5 h-5"
             fill="currentColor"
@@ -157,8 +171,11 @@ function App() {
           </svg>
         </a>
       </div>
-      
-      <p class="w-full text-center my-12 text-gray-600 sticky pt-32 bottom-0">Made by Samyak Khatua</p>
+
+      {/* footer */}
+      <p class="w-full text-center my-12 text-gray-600 sticky pt-32 bottom-0">
+        Made by Samyak Khatua
+      </p>
     </div>
   );
 }
