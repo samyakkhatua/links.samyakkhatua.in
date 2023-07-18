@@ -16,7 +16,7 @@ function CurrentlyPlaying() {
       <div className="">
 
         {currentlyPlaying ? (
-          <div className="max-w-xs overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
+          <div className="overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
             <div className="px-4 py-2">
               <h4 className="text-xs font text-gray-500 dark:text-white pt-2 pb-3">
                 What Samyak is listening on Spotify?
