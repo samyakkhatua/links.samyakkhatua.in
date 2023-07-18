@@ -173,7 +173,7 @@ function App() {
         </a>
       </div>
 
-      <CurrentlyPlaying />
+      {/* <CurrentlyPlaying /> */}
 
       {/* footer */}
       <p class="w-full text-center my-12 text-gray-600 sticky pt-32 bottom-0">
