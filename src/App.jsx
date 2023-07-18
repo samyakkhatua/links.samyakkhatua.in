@@ -1,4 +1,5 @@
 import "./App.css";
+import CurrentlyPlaying from "./components/CurrentlyPlaying";
 import useAnalyticsEventTracker from "./components/useAnalyticsEventTracker";
 
 // Google Analytics (GA4)
@@ -171,6 +172,8 @@ function App() {
           </svg>
         </a>
       </div>
+
+      <CurrentlyPlaying />
 
       {/* footer */}
       <p class="w-full text-center my-12 text-gray-600 sticky pt-32 bottom-0">
