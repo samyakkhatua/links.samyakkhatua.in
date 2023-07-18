@@ -16,15 +16,15 @@ function CurrentlyPlaying() {
       <div className="">
 
         {currentlyPlaying ? (
-          <div className="overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
+          <div className="overflow-hidden rounded-lg shadow-lg bg-gray-800">
             <div className="px-4 py-2">
-              <h4 className="text-xs font text-gray-500 dark:text-white pt-2 pb-3">
+              <h4 className="text-xs font text-white pt-2 pb-3">
                 What Samyak is listening on Spotify?
               </h4>
-              <h1 className="text-xl font-bold text-gray-800 uppercase dark:text-white">
+              <h1 className="text-xl font-bold uppercase text-white">
                 {currentlyPlaying.track_name}
               </h1>
-              <p className="pt-0 text-sm text-gray-500 dark:text-gray-400">
+              <p className="pt-0 text-sm text-gray-400">
                 by {currentlyPlaying.artists}
               </p>
             </div>
