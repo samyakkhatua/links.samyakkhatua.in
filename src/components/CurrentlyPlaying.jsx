@@ -4,14 +4,15 @@ function CurrentlyPlaying() {
   const [currentlyPlaying, setCurrentlyPlaying] = useState(null);
 
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/currently-playing")
+    fetch("https://spotinow-1-t1281143.deta.app/currently-playing")
+    // fetch("http://127.0.0.1:8000/currently-playing")
       .then((response) => response.json())
       .then((data) => setCurrentlyPlaying(data))
       .catch((error) => console.error(error));
   }, []);
 
   return (
-    <div className="justify-content m-auto w-full sm:w-[40%] pt-24">
+    <div className="items-center justify-content m-auto w-full sm:w-[40%] pt-24">
       <div className="">
 
         {currentlyPlaying ? (
@@ -45,7 +46,7 @@ function CurrentlyPlaying() {
           </div>
         ) : (
           <>
-            <p> Samyak is listening on Spotify?</p>
+            <p className="text-white">What Samyak is listening on Spotify?</p>
           </>
         )}
       </div>
