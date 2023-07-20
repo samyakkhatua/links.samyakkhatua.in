@@ -21,7 +21,7 @@ function App() {
     useAnalyticsEventTracker(category, action, label);
 
   return (
-    <div className="mt-32 h-[100%]">
+    <div className="mt-24 h-[100%]">
       <div className="justify-content m-auto w-full sm:w-[40%] ">
         <div class="gap-6 text-center md:grid-cols-3 lg:gap-12 text-white">
           <div class="mb-12 md:mb-0">
@@ -66,7 +66,7 @@ function App() {
             gaEventTracker("link cards", "card clicked", "threads")
           }
         >
-          <span class="text-xs bg-blue-600 rounded-full text-white px-4 py-1.5 mr-3 ">
+          <span class="text-xs w-[100px] bg-blue-600 rounded-full text-white px-4 py-1.5 mr-3 ">
             Threads
           </span>{" "}
           <span class="text-sm font-medium">
@@ -96,7 +96,7 @@ function App() {
             gaEventTracker("link cards", "card clicked", "linkedin")
           }
         >
-          <span class="text-xs bg-blue-600 rounded-full text-white px-4 py-1.5 mr-3 w-30">
+          <span class="text-xs w-[100px] bg-blue-600 rounded-full text-white px-4 py-1.5 mr-3 w-30">
             Linkedin
           </span>{" "}
           <span class="text-sm font-medium">Let's connect and network!</span>
@@ -124,7 +124,7 @@ function App() {
             gaEventTracker("link cards", "card clicked", "github")
           }
         >
-          <span class="text-xs bg-blue-600 rounded-full text-white px-4 py-1.5 mr-3 w-30">
+          <span class="text-xs w-[100px] bg-blue-600 rounded-full text-white px-4 py-1.5 mr-3 w-30">
             Github
           </span>{" "}
           <span class="text-sm font-medium">
@@ -154,7 +154,7 @@ function App() {
             gaEventTracker("link cards", "card clicked", "email")
           }
         >
-          <span class="text-xs bg-blue-600 rounded-full text-white px-4 py-1.5 mr-3 w-30">
+          <span class="text-xs w-[100px] bg-blue-600 rounded-full text-white px-4 py-1.5 mr-3 w-30">
             Email
           </span>{" "}
           <span class="text-sm font-medium">hello@samyakkhatua.in</span>
