@@ -7,7 +7,8 @@ import useAnalyticsEventTracker from "./components/useAnalyticsEventTracker";
 
 // Google Analytics (GA4)
 import ReactGA from "react-ga4";
-const MEASUREMENT_ID = process.env.REACT_APP_GA4_MEASUREMENT_ID;
+const MEASUREMENT_ID = "G-RRSWWQMQ0Y"
+
 ReactGA.initialize(MEASUREMENT_ID);
 
 function App() {
