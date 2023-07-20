@@ -176,7 +176,7 @@ function App() {
       <CurrentlyPlaying />
 
       {/* footer */}
-      <p class="w-full text-center my-12 text-gray-600 sticky pt-32 bottom-0">
+      <p class="w-full text-center my-12 text-gray-600 pt-32 bottom-0">
         Made by Samyak Khatua
       </p>
     </div>
